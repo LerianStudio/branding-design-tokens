@@ -123,6 +123,46 @@ export default function AvatarsPage() {
           </Text>
         </div>
 
+        {/* Sindarian Hero Showcase */}
+        <Card className="mb-8 bg-gradient-to-br from-lerian-yellow/5 via-transparent to-lerian-yellow/10 border-lerian-yellow/20">
+          <CardHeader className="text-center">
+            <CardTitle className="font-heading text-2xl">Meet the Sindarian Family</CardTitle>
+            <CardDescription className="font-body text-lg">
+              Six unique expressions for every user experience moment
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 py-8">
+              {brandAssets.filter(asset => asset.file.includes('sindarian')).map((asset, index) => (
+                <div key={asset.name} className="text-center space-y-3 group">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-lerian-yellow/20 rounded-full scale-110 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                    <Avatar className="h-24 w-24 mx-auto relative z-10 ring-4 ring-white shadow-lg group-hover:scale-105 transition-transform">
+                      <AvatarImage src={`/${asset.file}`} alt={asset.name} />
+                      <AvatarFallback className="bg-lerian-yellow text-lerian-black text-lg">
+                        S{index + 1}
+                      </AvatarFallback>
+                    </Avatar>
+                  </div>
+                  <div className="space-y-1">
+                    <Text variant="small" className="font-semibold text-center">
+                      {asset.name.replace('Sindarian ', '')}
+                    </Text>
+                    <Text variant="caption" className="text-muted-foreground block text-center leading-tight">
+                      {asset.description.replace('Sindarian for ', '').replace('Sindarian ', '')}
+                    </Text>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="text-center pt-4">
+              <Text variant="caption" className="text-muted-foreground">
+                Click on any avatar below to download or see usage examples
+              </Text>
+            </div>
+          </CardContent>
+        </Card>
+
         <div className="space-y-8">
           {/* Avatar Sizes */}
           <Card>
@@ -242,6 +282,76 @@ export default function AvatarsPage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Sindarian Expression Showcase */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-heading">Sindarian Expression Gallery</CardTitle>
+              <CardDescription className="font-body">
+                Complete collection of Sindarian mascot expressions for different contexts and user experiences
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                {brandAssets.filter(asset => asset.file.includes('sindarian')).map((asset) => (
+                  <div key={asset.name} className="text-center space-y-3">
+                    <div className="relative group">
+                      <Avatar className="h-20 w-20 mx-auto ring-2 ring-lerian-yellow/20 group-hover:ring-lerian-yellow/60 transition-all">
+                        <AvatarImage src={`/${asset.file}`} alt={asset.name} />
+                        <AvatarFallback className="bg-lerian-yellow text-lerian-black">
+                          S
+                        </AvatarFallback>
+                      </Avatar>
+                      <div className="absolute inset-0 bg-lerian-yellow/0 group-hover:bg-lerian-yellow/10 rounded-full transition-colors"></div>
+                    </div>
+                    <div className="space-y-1">
+                      <Text variant="small" className="font-medium">{asset.name}</Text>
+                      <Text variant="caption" className="text-muted-foreground block text-center leading-tight">
+                        {asset.description}
+                      </Text>
+                      <div className="pt-2">
+                        <Badge variant="outline" className="text-xs px-2 py-1">
+                          {asset.usage.split(',')[0]}
+                        </Badge>
+                      </div>
+                    </div>
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      className="w-full text-xs"
+                      onClick={() => {
+                        const link = document.createElement('a')
+                        link.href = `/${asset.file}`
+                        link.download = asset.file
+                        link.click()
+                      }}
+                    >
+                      <Download className="h-3 w-3 mr-1" />
+                      Download
+                    </Button>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-8 p-4 bg-lerian-yellow/10 rounded-lg border border-lerian-yellow/20">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0">
+                    <Avatar className="h-8 w-8">
+                      <AvatarImage src="/sindarian-happy.png" alt="Sindarian Happy" />
+                      <AvatarFallback className="bg-lerian-yellow text-lerian-black text-xs">S</AvatarFallback>
+                    </Avatar>
+                  </div>
+                  <div className="space-y-2">
+                    <Text variant="small" className="font-medium">Usage Guidelines</Text>
+                    <Text variant="caption" className="text-muted-foreground">
+                      Each Sindarian expression is designed for specific user experience contexts. Use celebrating for success states, 
+                      thinking for loading/processing, working for background tasks, waving for greetings, and happy for positive interactions. 
+                      The base avatar works well for general support contexts.
+                    </Text>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
