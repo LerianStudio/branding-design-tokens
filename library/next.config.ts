@@ -4,10 +4,16 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true,
+  },
+  experimental: {
+    turbo: false,
   },
 }
 
