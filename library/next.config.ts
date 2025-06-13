@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
   assetPrefix: '/branding-design-tokens',
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/lib/image-loader.ts',
   },
   experimental: {
     turbo: false,
