@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Lerian Logo Lerian Design System":
+    - /url: /
+    - img "Lerian Logo"
+    - text: Lerian Design System
+  - navigation:
+    - link "Components":
+      - /url: /components/
+    - link "Blocks":
+      - /url: /blocks/
+    - link "Dashboard":
+      - /url: /blocks/dashboard/
+    - link "Authentication":
+      - /url: /blocks/auth/
+    - link "Marketing":
+      - /url: /blocks/marketing/
+    - link "Brand Assets":
+      - /url: /brand/assets/
+    - link "Avatars":
+      - /url: /brand/avatars/
+  - button "View on GitHub"
+- text: Design System v1.0.0
+- heading "Coding together to give everyone the freedom to write your own future" [level=2]
+- paragraph: The official Lerian design system for Midaz plugin developers, featuring components and blocks that follow our branding guidelines for consistent partner integrations.
+- link "Explore Blocks":
+  - /url: /blocks/
+- link "View Components":
+  - /url: /components/
+- heading "Block Library" [level=2]
+- paragraph: Production-ready component blocks for Midaz plugin development with consistent Lerian branding for partner implementations.
+- text: Ready Authentication Login, register, and password reset forms with Lerian branding
+- link "View Examples":
+  - /url: /blocks/auth/
+- text: Ready Dashboard Complete dashboard layouts with navigation and data visualization
+- link "View Examples":
+  - /url: /blocks/dashboard/
+- text: Ready Marketing Landing pages, hero sections, and marketing components
+- link "View Examples":
+  - /url: /blocks/marketing/
+- text: Ready Data Tables Complex data tables with sorting, filtering, and pagination
+- link "View Examples":
+  - /url: /blocks/tables/
+- text: Ready Forms Comprehensive form examples with validation and accessibility
+- link "View Examples":
+  - /url: /blocks/forms/
+- text: Ready Charts Beautiful data visualizations using Lerian color palette
+- link "View Examples":
+  - /url: /blocks/charts/
+- text: Ready Communication Chat interfaces, notifications, and support components
+- link "View Examples":
+  - /url: /blocks/communication/
+- text: Ready E-commerce Banking product catalog and shopping experience components
+- link "View Examples":
+  - /url: /blocks/ecommerce/
+- heading "Plugin Development Standards" [level=2]
+- paragraph: Designed to help Midaz partners and community developers build consistent, accessible integrations that follow Lerian's design principles.
+- heading "Brand Consistency" [level=4]
+- paragraph: Every component follows Lerian's design guidelines with proper typography and colors.
+- heading "Accessibility First" [level=4]
+- paragraph: WCAG AA compliant components with proper contrast ratios and keyboard navigation.
+- heading "Developer Experience" [level=4]
+- paragraph: Well-documented components with TypeScript support and clear implementation examples.
+- heading "Production Ready" [level=4]
+- paragraph: Battle-tested components used across Lerian's products and partner implementations.
+- heading "Start Building Your Plugin" [level=2]
+- paragraph: Use these components in your Midaz plugin development. All examples include copy-paste code and implementation notes for seamless integration.
+- link "View Dashboard Examples":
+  - /url: /blocks/dashboard/
+- link "Midaz Documentation":
+  - /url: https://github.com/lerianstudio/midaz
+- contentinfo:
+  - paragraph: Built with ❤️ by Lerian Studio for the Midaz community and partners.
+- alert
+```

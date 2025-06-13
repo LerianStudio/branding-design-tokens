@@ -1,0 +1,53 @@
+/* Lerian Design System - Development CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Lerian Brand Colors */
+:root {
+  --lerian-yellow: 48 94% 51%;
+  --lerian-green: 131 92% 64%;
+  --lerian-red: 8 100% 70%;
+  --lerian-blue: 195 98% 59%;
+  --lerian-black: 210 4% 9%;
+  --lerian-gray-dark: 50 5% 23%;
+  --lerian-gray-medium: 50 5% 51%;
+  --lerian-gray: 0 0% 81%;
+  --lerian-gray-light: 0 0% 95%;
+
+  /* Semantic mappings */
+  --background: 0 0% 100%;
+  --foreground: 210 4% 9%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 4% 9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 4% 9%;
+  --primary: 195 98% 59%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 210 4% 9%;
+  --muted: 0 0% 81%;
+  --muted-foreground: 50 5% 23%;
+  --accent: 48 94% 51%;
+  --accent-foreground: 210 4% 9%;
+  --destructive: 8 100% 70%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 81%;
+  --input: 0 0% 95%;
+  --ring: 195 98% 59%;
+  --chart-1: 195 98% 59%;
+  --chart-2: 48 94% 51%;
+  --chart-3: 131 92% 64%;
+  --chart-4: 8 100% 70%;
+  --chart-5: 50 5% 23%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}

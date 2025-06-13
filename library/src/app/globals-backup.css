@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.5rem;
+  
+  /* Lerian Brand Colors in HSL format */
+  --lerian-yellow: 45 99% 50%;
+  --lerian-green: 130 93% 65%;
+  --lerian-red: 6 100% 69%;
+  --lerian-blue: 191 100% 59%;
+  --lerian-black: 200 4% 10%;
+  --lerian-gray-dark: 42 6% 23%;
+  --lerian-gray-medium: 39 8% 51%;
+  --lerian-gray: 0 0% 81%;
+  --lerian-gray-light: 0 0% 95%;
+  
+  /* Semantic Mappings - Yellow and Black as core colors (HSL format for shadcn/ui) */
+  --background: 0 0% 100%;
+  --foreground: 200 4% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 200 4% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 200 4% 10%;
+  --primary: 45 99% 50%;
+  --primary-foreground: 200 4% 10%;
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 200 4% 10%;
+  --muted: 0 0% 81%;
+  --muted-foreground: 40 9% 38%;
+  --accent: 189 100% 59%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 5 100% 69%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 81%;
+  --input: 0 0% 95%;
+  --ring: 45 99% 50%;
+  
+  /* Charts using Lerian palette - Yellow first */
+  --chart-1: var(--lerian-yellow);
+  --chart-2: var(--lerian-black);
+  --chart-3: var(--lerian-blue);
+  --chart-4: var(--lerian-green);
+  --chart-5: var(--lerian-red);
+  
+  /* Sidebar */
+  --sidebar: var(--lerian-gray-light);
+  --sidebar-foreground: var(--lerian-black);
+  --sidebar-primary: var(--lerian-yellow);
+  --sidebar-primary-foreground: var(--lerian-black);
+  --sidebar-accent: var(--lerian-blue);
+  --sidebar-accent-foreground: white;
+  --sidebar-border: var(--lerian-gray);
+  --sidebar-ring: var(--lerian-yellow);
+}
+
+.dark {
+  --background: 200 4% 10%;
+  --foreground: 0 0% 100%;
+  --card: 40 9% 23%;
+  --card-foreground: 0 0% 100%;
+  --popover: 40 9% 23%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 45 99% 50%;
+  --primary-foreground: 200 4% 10%;
+  --secondary: 40 9% 23%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 40 9% 38%;
+  --muted-foreground: 0 0% 95%;
+  --accent: 189 100% 59%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 5 100% 69%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 40 9% 38%;
+  --input: 40 9% 23%;
+  --ring: 45 99% 50%;
+  
+  /* Charts remain same in dark mode */
+  --chart-1: var(--lerian-yellow);
+  --chart-2: var(--lerian-black);
+  --chart-3: var(--lerian-blue);
+  --chart-4: var(--lerian-green);
+  --chart-5: var(--lerian-red);
+  
+  /* Dark sidebar */
+  --sidebar: var(--lerian-gray-dark);
+  --sidebar-foreground: white;
+  --sidebar-primary: var(--lerian-yellow);
+  --sidebar-primary-foreground: var(--lerian-black);
+  --sidebar-accent: var(--lerian-blue);
+  --sidebar-accent-foreground: white;
+  --sidebar-border: var(--lerian-gray-medium);
+  --sidebar-ring: var(--lerian-yellow);
+}
