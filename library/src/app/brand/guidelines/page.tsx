@@ -3,6 +3,14 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Heading, Text } from "@/components/ui/typography"
 import { Header } from "@/components/layout/header"
+import { 
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 import { CheckCircle, XCircle, Info, Download, ExternalLink, Shield, Palette, Type, Layout, Users } from "lucide-react"
 import Link from "next/link"
 
@@ -104,14 +112,33 @@ export default function GuidelinesPage() {
       <Header />
       
       <div className="container py-16">
-        <div className="text-center mb-12">
+        {/* Breadcrumb Navigation */}
+        <div className="mb-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/brand">Brand</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Guidelines</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+
+        <div className="mb-12">
           <Badge className="mb-6 bg-lerian-blue text-white font-medium">
             Brand Guidelines
           </Badge>
           <Heading level={1} className="mb-4">
             Lerian Brand Guidelines
           </Heading>
-          <Text variant="lead" className="max-w-3xl mx-auto">
+          <Text variant="lead" className="max-w-3xl">
             Comprehensive guidelines for implementing Lerian's brand identity 
             consistently across all Midaz plugin development and partner integrations.
           </Text>

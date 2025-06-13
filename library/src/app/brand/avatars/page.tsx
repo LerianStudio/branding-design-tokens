@@ -6,6 +6,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Heading, Text } from "@/components/ui/typography"
 import { Header } from "@/components/layout/header"
 import { Button } from "@/components/ui/button"
+import { 
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 import { Copy, Download, User, Building } from "lucide-react"
 
 const avatarSizes = [
@@ -110,14 +118,33 @@ export default function AvatarsPage() {
       <Header />
       
       <div className="container py-16">
-        <div className="text-center mb-12">
+        {/* Breadcrumb Navigation */}
+        <div className="mb-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/brand">Brand</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Avatars</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+
+        <div className="mb-12">
           <Badge className="mb-6 bg-lerian-yellow text-lerian-black font-medium">
             Brand Assets
           </Badge>
           <Heading level={1} className="mb-4">
             Avatar Usage Guide
           </Heading>
-          <Text variant="lead" className="max-w-2xl mx-auto">
+          <Text variant="lead" className="max-w-2xl">
             Comprehensive guide for using avatars in Lerian applications with 
             brand consistency and accessibility guidelines.
           </Text>

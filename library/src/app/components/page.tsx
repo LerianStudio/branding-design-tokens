@@ -63,11 +63,14 @@ export default function ComponentsPage() {
         </Breadcrumb>
 
         {/* Page Header */}
-        <div className="text-center">
-          <Heading level={1} className="mb-4">
+        <div className="mb-12">
+          <Badge variant="secondary" className="mb-6">
             Component Library
+          </Badge>
+          <Heading level={1} className="mb-4">
+            UI Components
           </Heading>
-          <Text variant="lead" className="max-w-2xl mx-auto">
+          <Text variant="lead" className="max-w-2xl">
             A comprehensive collection of UI components built with shadcn/ui and customized 
             with Lerian's branding guidelines.
           </Text>
