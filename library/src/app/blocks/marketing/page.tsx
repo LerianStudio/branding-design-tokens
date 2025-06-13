@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+// import Image from "next/image" - not needed, using regular img tags
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -212,8 +212,8 @@ export default function MarketingPage() {
           
           {/* Sindarian Avatar */}
           <div className="absolute top-8 right-8 opacity-20 pointer-events-none hidden lg:block">
-            <Image 
-              src="/sindarian-celebrating.png" 
+            <img 
+              src="/branding-design-tokens/sindarian-celebrating.png" 
               alt="Sindarian Mascot" 
               width={120} 
               height={120}

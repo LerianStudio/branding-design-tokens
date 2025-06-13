@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -98,8 +97,8 @@ export default function Home() {
           
           {/* Brand graphics */}
           <div className="absolute -top-20 -right-20 opacity-10 pointer-events-none">
-            <Image 
-              src="/lerian-graphic-3.png" 
+            <img 
+              src="/branding-design-tokens/lerian-graphic-3.png" 
               alt="" 
               width={200} 
               height={200}
@@ -107,8 +106,8 @@ export default function Home() {
             />
           </div>
           <div className="absolute -bottom-20 -left-20 opacity-10 pointer-events-none">
-            <Image 
-              src="/lerian-graphic-4.png" 
+            <img 
+              src="/branding-design-tokens/lerian-graphic-4.png" 
               alt="" 
               width={200} 
               height={200}

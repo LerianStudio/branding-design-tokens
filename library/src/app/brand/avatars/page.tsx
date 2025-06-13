@@ -138,7 +138,7 @@ export default function AvatarsPage() {
                   <div className="relative">
                     <div className="absolute inset-0 bg-lerian-yellow/20 rounded-full scale-110 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                     <Avatar className="h-24 w-24 mx-auto relative z-10 ring-4 ring-white shadow-lg group-hover:scale-105 transition-transform">
-                      <AvatarImage src={`/${asset.file}`} alt={asset.name} />
+                      <AvatarImage src={`/branding-design-tokens/${asset.file}`} alt={asset.name} />
                       <AvatarFallback className="bg-lerian-yellow text-lerian-black text-lg">
                         S{index + 1}
                       </AvatarFallback>
@@ -251,7 +251,7 @@ export default function AvatarsPage() {
                   <div key={asset.name} className="flex items-start gap-4 p-6 border rounded-lg">
                     <div className="flex-shrink-0">
                       <Avatar className="h-16 w-16">
-                        <AvatarImage src={`/${asset.file}`} alt={asset.name} />
+                        <AvatarImage src={`/branding-design-tokens/${asset.file}`} alt={asset.name} />
                         <AvatarFallback className="bg-lerian-yellow text-lerian-black">
                           L
                         </AvatarFallback>
@@ -272,7 +272,7 @@ export default function AvatarsPage() {
                       </div>
                       <Button variant="outline" size="sm" className="mt-2" onClick={() => {
                         const link = document.createElement('a')
-                        link.href = `/${asset.file}`
+                        link.href = `/branding-design-tokens/${asset.file}`
                         link.download = asset.file
                         link.click()
                       }}>
@@ -300,7 +300,7 @@ export default function AvatarsPage() {
                   <div key={asset.name} className="text-center space-y-3">
                     <div className="relative group">
                       <Avatar className="h-20 w-20 mx-auto ring-2 ring-lerian-yellow/20 group-hover:ring-lerian-yellow/60 transition-all">
-                        <AvatarImage src={`/${asset.file}`} alt={asset.name} />
+                        <AvatarImage src={`/branding-design-tokens/${asset.file}`} alt={asset.name} />
                         <AvatarFallback className="bg-lerian-yellow text-lerian-black">
                           S
                         </AvatarFallback>
@@ -324,7 +324,7 @@ export default function AvatarsPage() {
                       className="w-full text-xs"
                       onClick={() => {
                         const link = document.createElement('a')
-                        link.href = `/${asset.file}`
+                        link.href = `/branding-design-tokens/${asset.file}`
                         link.download = asset.file
                         link.click()
                       }}
@@ -339,7 +339,7 @@ export default function AvatarsPage() {
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0">
                     <Avatar className="h-8 w-8">
-                      <AvatarImage src="/sindarian-happy.png" alt="Sindarian Happy" />
+                      <AvatarImage src="/branding-design-tokens/sindarian-happy.png" alt="Sindarian Happy" />
                       <AvatarFallback className="bg-lerian-yellow text-lerian-black text-xs">S</AvatarFallback>
                     </Avatar>
                   </div>
@@ -394,7 +394,7 @@ export default function AvatarsPage() {
                 <div className="p-4 bg-muted/20 rounded-lg">
                   <div className="flex items-center gap-3 mb-4">
                     <Avatar>
-                      <AvatarImage src="/sindarian-avatar.png" alt="Sindarian" />
+                      <AvatarImage src="/branding-design-tokens/sindarian-avatar.png" alt="Sindarian" />
                       <AvatarFallback className="bg-lerian-yellow text-lerian-black font-medium">
                         SI
                       </AvatarFallback>

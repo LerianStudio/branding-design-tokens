@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+// import Image from "next/image" - not needed, using regular img tags
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -168,7 +168,7 @@ export default function AssetsPage() {
 
   const handleDownload = (filename: string) => {
     const link = document.createElement('a')
-    link.href = `/${filename}`
+    link.href = `/branding-design-tokens/${filename}`
     link.download = filename
     link.click()
   }
@@ -218,8 +218,8 @@ export default function AssetsPage() {
                 {logoAssets.map((logo) => (
                   <div key={logo.name} className="border rounded-lg p-6 space-y-4">
                     <div className="h-32 bg-gray-50 rounded-lg flex items-center justify-center">
-                      <Image
-                        src={`/${logo.file}`}
+                      <img
+                        src={`/branding-design-tokens/${logo.file}`}
                         alt={logo.name}
                         width={120}
                         height={80}
@@ -269,11 +269,10 @@ export default function AssetsPage() {
                 {brandGraphics.map((graphic) => (
                   <div key={graphic.name} className="border rounded-lg p-4 space-y-3">
                     <div className="h-24 bg-gray-50 rounded-lg overflow-hidden relative">
-                      <Image
-                        src={`/${graphic.file}`}
+                      <img
+                        src={`/branding-design-tokens/${graphic.file}`}
                         alt={graphic.name}
-                        fill
-                        className="object-cover opacity-60"
+                        className="absolute inset-0 w-full h-full object-cover opacity-60"
                       />
                     </div>
                     <div className="space-y-2">
@@ -312,8 +311,8 @@ export default function AssetsPage() {
                 {mascotAssets.map((mascot) => (
                   <div key={mascot.name} className="border rounded-lg p-4 space-y-3">
                     <div className="h-32 bg-gradient-to-br from-lerian-yellow/10 to-lerian-green/10 rounded-lg flex items-center justify-center">
-                      <Image
-                        src={`/${mascot.file}`}
+                      <img
+                        src={`/branding-design-tokens/${mascot.file}`}
                         alt={mascot.name}
                         width={100}
                         height={100}

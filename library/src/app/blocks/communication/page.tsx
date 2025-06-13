@@ -80,7 +80,7 @@ const chatMessages = [
   {
     id: "1",
     sender: "Support Agent",
-    avatar: "/sindarian-waving.png",
+    avatar: "/branding-design-tokens/sindarian-waving.png",
     message: "Hello! I'm here to help you with your banking needs. How can I assist you today?",
     time: "10:32 AM",
     isBot: true
@@ -96,7 +96,7 @@ const chatMessages = [
   {
     id: "3",
     sender: "Support Agent", 
-    avatar: "/sindarian-thinking.png",
+    avatar: "/branding-design-tokens/sindarian-thinking.png",
     message: "I'd be happy to help you check on that transaction. Can you please provide the transaction ID?",
     time: "10:34 AM",
     isBot: true
@@ -112,7 +112,7 @@ const chatMessages = [
   {
     id: "5",
     sender: "Support Agent",
-    avatar: "/sindarian-working.png", 
+    avatar: "/branding-design-tokens/sindarian-working.png", 
     message: "Let me look that up for you. I can see the transaction is currently being processed by our banking partner. It should complete within the next 2 hours.",
     time: "10:36 AM",
     isBot: true
@@ -288,7 +288,7 @@ export default function CommunicationPage() {
                 <div className="p-4 border-b bg-muted/20 flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <Avatar className="h-8 w-8">
-                      <AvatarImage src="/sindarian-happy.png" alt="Support Agent" />
+                      <AvatarImage src="/branding-design-tokens/sindarian-happy.png" alt="Support Agent" />
                       <AvatarFallback className="bg-lerian-yellow text-lerian-black">SA</AvatarFallback>
                     </Avatar>
                     <div>

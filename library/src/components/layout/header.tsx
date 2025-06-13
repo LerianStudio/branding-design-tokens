@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Badge } from "@/components/ui/badge"
@@ -26,8 +25,8 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-4">
           <Link href="/" className="flex items-center">
-            <Image 
-              src="/lerian-logo.svg" 
+            <img 
+              src="/branding-design-tokens/lerian-logo.svg" 
               alt="Lerian Logo" 
               width={48} 
               height={48}
