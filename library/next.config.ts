@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   },
   output: 'export',
   trailingSlash: true,
+  basePath: '/branding-design-tokens',
+  assetPrefix: '/branding-design-tokens',
   images: {
     unoptimized: true,
   },
