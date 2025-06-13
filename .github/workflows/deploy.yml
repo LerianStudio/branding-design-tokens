@@ -41,9 +41,8 @@ jobs:
           NODE_ENV: production
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

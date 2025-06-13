@@ -1,5 +1,7 @@
 # Lerian Studio Branding Design Tokens
 
+🚀 **Live Demo**: [http://swagger.lerian.studio/branding-design-tokens/](http://swagger.lerian.studio/branding-design-tokens/)
+
 This repository contains the official design tokens and brand assets for Lerian Studio, specifically configured for use with shadcn/ui component library. These tokens ensure consistent visual identity across all digital products and interfaces.
 
 ## 🎨 Brand Overview
