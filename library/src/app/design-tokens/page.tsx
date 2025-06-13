@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Copy, Palette, Type, Move, Square, Zap } from "lucide-react"
 import { Header } from "@/components/layout/header"
+import { Heading, Text } from "@/components/ui/typography"
 import { 
   tokens,
   getColor, 
@@ -64,7 +65,7 @@ function ColorPalette() {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold mb-4">Primary Brand Colors</h3>
+        <Heading level={3} className="mb-4">Primary Brand Colors</Heading>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           {Object.entries(colors.lerian).map(([name, token]) => (
             <Card key={name} className="overflow-hidden">
@@ -494,18 +495,18 @@ function AnimationShowcase() {
 
 export default function DesignTokensPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <Header />
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <Heading level={1} className="mb-4">
               Lerian Design Tokens
-            </h1>
-            <p className="text-xl text-gray-600 mb-6">
+            </Heading>
+            <Text variant="lead" className="mb-6">
               Atomic design values for consistent Midaz plugin development. 
               These tokens provide the foundation for building financial applications with the Lerian Design System.
-            </p>
+            </Text>
             <div className="flex gap-4">
               <Badge variant="secondary" className="flex items-center gap-2">
                 <Palette className="h-4 w-4" />
@@ -561,7 +562,7 @@ export default function DesignTokensPage() {
           </Tabs>
 
           <div className="mt-12 p-6 bg-white rounded-lg border">
-            <h2 className="text-2xl font-bold mb-4">Usage in React</h2>
+            <Heading level={2} className="mb-4">Usage in React</Heading>
             <div className="space-y-4 text-sm">
               <div>
                 <h3 className="font-semibold mb-2">Import tokens:</h3>

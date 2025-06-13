@@ -31,6 +31,14 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer"
 import { Heading, Text, CodeText } from "@/components/ui/typography"
 import { Header } from "@/components/layout/header"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 import { AlertCircle, CheckCircle, Info, Star, Heart, Zap, Calendar as CalendarIcon, ChevronDown, Menu, MoreHorizontal, Settings, HelpCircle, User } from "lucide-react"
 
 export default function ComponentsPage() {
@@ -41,6 +49,19 @@ export default function ComponentsPage() {
       <Header />
       
       <div className="container py-16 space-y-16">
+        {/* Breadcrumb Navigation */}
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Components</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         {/* Page Header */}
         <div className="text-center">
           <Heading level={1} className="mb-4">
