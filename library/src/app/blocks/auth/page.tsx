@@ -18,6 +18,14 @@ import {
 } from "@/components/ui/alert-dialog"
 import { Heading, Text, BrandTagline } from "@/components/ui/typography"
 import { Header } from "@/components/layout/header"
+import { 
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 import { Eye, EyeOff, Github, Mail, ArrowLeft, Trash2 } from "lucide-react"
 import { useState } from "react"
 
@@ -36,11 +44,30 @@ export default function AuthPage() {
         <Header />
         
         <div className="container py-16">
-          <div className="text-center mb-12">
+          {/* Breadcrumb Navigation */}
+          <div className="mb-6">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/blocks">Blocks</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Authentication</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+
+          <div className="mb-12">
             <Heading level={1} className="mb-4">
               Authentication Blocks
             </Heading>
-            <Text variant="lead" className="max-w-2xl mx-auto">
+            <Text variant="lead" className="max-w-2xl">
               Complete authentication flows built with Lerian branding guidelines. 
               Copy and customize these forms for your applications.
             </Text>

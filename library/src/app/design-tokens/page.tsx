@@ -497,17 +497,20 @@ export default function DesignTokensPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-8">
+          <div className="text-center mb-12">
+            <Badge className="mb-6 bg-lerian-yellow text-lerian-black font-medium">
+              Design System v1.0.0
+            </Badge>
             <Heading level={1} className="mb-4">
               Lerian Design Tokens
             </Heading>
-            <Text variant="lead" className="mb-6">
+            <Text variant="lead" className="mb-6 max-w-2xl mx-auto">
               Atomic design values for consistent Midaz plugin development. 
               These tokens provide the foundation for building financial applications with the Lerian Design System.
             </Text>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Badge variant="secondary" className="flex items-center gap-2">
                 <Palette className="h-4 w-4" />
                 Colors
